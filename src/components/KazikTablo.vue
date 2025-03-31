@@ -5,7 +5,7 @@
       <kazik-item :item="items[1]" />
       <kazik-item :item="items[2]" />
     </div>
-    <div class="a1"><button class="kazik-roll-btn">Крутить</button></div>
+    <div class="a1"><button class="kazik-roll-btn" @click="rollKazik">Крутить</button></div>
   </div>
 </template>
 
@@ -30,6 +30,59 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    rollKazik() {
+      const a = Math.floor(Math.random() * 3) // от 0 до 3
+      console.log(a)
+      switch (a) {
+        case 0:
+          this.items[0].src = '/src/assets/img/crystal.png'
+          break
+        case 1:
+          this.items[0].src = '/src/assets/img/money.png'
+          break
+
+        case 2:
+          this.items[0].src = '/src/assets/img/banknote.png'
+          break
+
+        default:
+          break
+      }
+      const b = Math.floor(Math.random() * 3) // от 0 до 3
+      switch (b) {
+        case 0:
+          this.items[1].src = '/src/assets/img/crystal.png'
+          break
+        case 1:
+          this.items[1].src = '/src/assets/img/money.png'
+          break
+
+        case 2:
+          this.items[1].src = '/src/assets/img/banknote.png'
+          break
+
+        default:
+          break
+      }
+      const c = Math.floor(Math.random() * 3) // от 0 до 3
+      switch (c) {
+        case 0:
+          this.items[2].src = '/src/assets/img/crystal.png'
+          break
+        case 1:
+          this.items[2].src = '/src/assets/img/money.png'
+          break
+
+        case 2:
+          this.items[2].src = '/src/assets/img/banknote.png'
+          break
+
+        default:
+          break
+      }
+    },
   },
 }
 </script>
