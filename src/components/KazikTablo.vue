@@ -1,5 +1,6 @@
 <template>
   <div class="kazik-tablo-div">
+    <div class="kazik-score">Денег: {{ currentMoney }}</div>
     <div class="kazik-tablo">
       <kazik-item :item="items[0]" />
       <kazik-item :item="items[1]" />
@@ -15,6 +16,7 @@ export default {
   components: { KazikItem },
   data() {
     return {
+      currentMoney: 500,
       items: [
         {
           id: 0,
@@ -81,6 +83,12 @@ export default {
 
         default:
           break
+      }
+
+      if (a == b && b == c) {
+        this.currentMoney += 100
+      } else {
+        this.currentMoney -= 10
       }
     },
   },
