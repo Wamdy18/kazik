@@ -1,9 +1,14 @@
 <template>
-  <div></div>
+  <div class="main-page">
+    <kazik-tablo />
+  </div>
 </template>
 
 <script>
-export default {}
+import KazikTablo from '../components/KazikTablo.vue'
+export default {
+  components: { KazikTablo },
+}
 </script>
 
 <style></style>
