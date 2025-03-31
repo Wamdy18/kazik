@@ -20,65 +20,82 @@ export default {
       items: [
         {
           id: 0,
-          src: '/src/assets/img/crystal.png',
+          // src: '/src/assets/img/crystal.png',
+          src: 'crystal.png',
         },
         {
           id: 1,
-          src: '/src/assets/img/money.png',
+          src: 'money.png',
         },
         {
           id: 2,
-          src: '/src/assets/img/banknote.png',
+          src: 'banknote.png',
+        },
+        {
+          id: 3,
+          src: 'qr.jpg',
         },
       ],
     }
   },
   methods: {
     rollKazik() {
-      const a = Math.floor(Math.random() * 3) // от 0 до 3
+      const a = Math.floor(Math.random() * 4) // от 0 до 3
       console.log(a)
       switch (a) {
         case 0:
-          this.items[0].src = '/src/assets/img/crystal.png'
+          this.items[0].src = 'crystal.png'
           break
         case 1:
-          this.items[0].src = '/src/assets/img/money.png'
+          this.items[0].src = 'money.png'
           break
 
         case 2:
-          this.items[0].src = '/src/assets/img/banknote.png'
+          this.items[0].src = 'banknote.png'
+          break
+
+        case 3:
+          this.items[0].src = 'qr.jpg'
           break
 
         default:
           break
       }
-      const b = Math.floor(Math.random() * 3) // от 0 до 3
+      const b = Math.floor(Math.random() * 4) // от 0 до 3
       switch (b) {
         case 0:
-          this.items[1].src = '/src/assets/img/crystal.png'
+          this.items[1].src = 'crystal.png'
           break
         case 1:
-          this.items[1].src = '/src/assets/img/money.png'
+          this.items[1].src = 'money.png'
           break
 
         case 2:
-          this.items[1].src = '/src/assets/img/banknote.png'
+          this.items[1].src = 'banknote.png'
+          break
+
+        case 3:
+          this.items[1].src = 'qr.jpg'
           break
 
         default:
           break
       }
-      const c = Math.floor(Math.random() * 3) // от 0 до 3
+      const c = Math.floor(Math.random() * 4) // от 0 до 3
       switch (c) {
         case 0:
-          this.items[2].src = '/src/assets/img/crystal.png'
+          this.items[2].src = 'crystal.png'
           break
         case 1:
-          this.items[2].src = '/src/assets/img/money.png'
+          this.items[2].src = 'money.png'
           break
 
         case 2:
-          this.items[2].src = '/src/assets/img/banknote.png'
+          this.items[2].src = 'banknote.png'
+          break
+
+        case 3:
+          this.items[2].src = 'qr.jpg'
           break
 
         default:
